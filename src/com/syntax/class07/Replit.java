@@ -32,6 +32,8 @@ public class Replit {
 //		
 		//kjasdkjfkajkskfjsdkf
 		
+		//uhyuyuyui
+		
 		Scanner scan=new Scanner(System.in);
 		int x=scan.nextInt();
         int y=x-1;
