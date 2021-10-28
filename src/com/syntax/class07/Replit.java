@@ -30,9 +30,6 @@ public class Replit {
 //
 //		System.out.println("Your grade is "+grade);
 //		
-		//kjasdkjfkajkskfjsdkf
-		
-		//uhyuyuyui
 		
 		Scanner scan=new Scanner(System.in);
 		int x=scan.nextInt();

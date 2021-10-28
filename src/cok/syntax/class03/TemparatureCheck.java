@@ -8,7 +8,7 @@ public class TemparatureCheck {
 		//Your program should check if temperature is below 32
 		//then it should print “Water will freeze with temperature __”,
 		//otherwise “Water will NOT freeze with temperature __”.
-		
+		//hhhhhhhh
 		int temp=40;
 		
 		if(temp<32) {
