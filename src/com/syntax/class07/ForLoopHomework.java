@@ -14,22 +14,66 @@ public class ForLoopHomework {
 		// The amount has to be accumulated if users add more money
 		// Whenever a user is done with payments, tell them “Thank you for shopping!”
 		
-		Scanner scan=new Scanner(System.in);
+//		Scanner scan=new Scanner(System.in);
+//		System.out.println("What would you like to buy?");
+//		String itemName=scan.next();
+//		double price=100.0;
+//		
+//		do {
+//			
+//			System.out.println("How much will you pay");
+//			double userMoney=scan.nextDouble();
+//			if(userMoney>price) {
+//				System.out.println("Here is your "+itemName+"here is your change="+(price-userMoney));
+//				break;
+//			}else {
+//				System.out.println("You DO NOT have enough money.Please give "+(price-userMoney));
+//			}	
+//		}while(true);
+//	}
+
 		
-		do {
-			System.out.println("What would you like to buy?");
-			String itemName=scan.next();
-			System.out.println("How much is it?");
-			double price=scan.nextDouble();
-			System.out.println("How much will you pay");
-			double userMoney=scan.nextDouble();
-			if(userMoney>10) {
-				System.out.println("Here is your "+itemName+"here is your change="+(price-userMoney));
-				break;
+			Scanner input = new Scanner(System.in);
+			String item;
+			double price;
+			double money;
+			double reminder;
+			double sum=0;
+
+			System.out.println(" Please enter the item you want to purchase");
+			item=input.next();
+
+			System.out.println(" Please enter the the price");
+			price=input.nextDouble();
+
+			do {
+			System.out.println(" Please pay for the "+item);
+			money=input.nextDouble();
+
+			sum+=money;
+
+			if (sum>price) {
+
+			double change=sum-price;
+			System.out.println("Here is your change "+change);
+			break;
+
+			}else if (sum<price) {
+
+			reminder=price-sum;
+			System.out.println("Please give me more "+reminder);
+
 			}else {
-				System.out.println("You DO NOT have enough money.Please give "+(price-userMoney));
-			}	
-		}while(true);
+			System.out.println("You go the right amount");
+			}
+
+			}while (sum!=price);
+
+			System.out.println("Thank you for shopping");
+
+			}
+		
+		
+		
 	}
 
-}
