@@ -22,8 +22,8 @@ public class Verification {
 		System.out.println("Please confirm your password");
 		String confirmPassword=scan.next();
 		
-		if(!(username.isEmpty() && password.isEmpty())) {
-			if(password.length()>8) {
+		if(!(username.isEmpty() || password.isEmpty())) {
+			if(password.length()>=8) {
 				if(!(password.contains(username))) {
 					if(password.equals(confirmPassword)) {
 						System.out.println("Your username and password has been created");

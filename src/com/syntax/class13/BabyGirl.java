@@ -26,8 +26,10 @@ public class BabyGirl {
 		String dadsName = scan.next();
 		System.out.println("Boy or Girl?");
 		String gender = scan.next();
-		String cutName1 = dadsName.substring(0, 3);
+		String cutName1 = dadsName.substring(0, 3);//hard code.try to be generic
+//		String cutName1 = dadsName.substring(0,dadsName.length()/2 );//bu daha generic .
 		String cutName2 = momsName.substring(0, 2);
+//		String cutName2 = momsName.substring(momsName.length()/2 );
 
 		if (gender.equalsIgnoreCase("boy")) {
 			

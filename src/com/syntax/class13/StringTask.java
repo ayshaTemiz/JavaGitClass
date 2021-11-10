@@ -7,11 +7,11 @@ public class StringTask {
 		// if the String has an odd number of characters and has 3 or more characters,
 		// print the character in the middle of the String.
 
-		String myString = "Today";
+		String myString = "hello";
 
 		if (!(myString.isEmpty())) {
 			if (myString.length() % 2 == 1 && myString.length() >= 3) {
-				System.out.println(myString.charAt(2));
+				System.out.println(myString.length()/2);
 			} else {
 				System.out.println(
 						"I cannot print this String.It has odd number of characters or has 3 or more characters");
@@ -23,13 +23,14 @@ public class StringTask {
 
 		//Create a String and print it in reverse order (Sunday → yadnuS).
 
-		String reverse = "Hola";
-
+		String reverse = "okul";
+//        String newStr="";  //hoca bu yontemle yapti
 		for (int i = reverse.length() - 1; i >= 0; i--) {
+//			newStr+=reverse.charAt(i);
 			char printIt = reverse.charAt(i);
 			System.out.print(printIt);
 		}
-
+//		System.out.println(newStr);
 	}
 
 }
