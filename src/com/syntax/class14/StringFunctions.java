@@ -59,12 +59,18 @@ public class StringFunctions {
 		
 //		How would you swap  2 strings without a temporary variable?
 		System.out.println("---------------------");
+		
 		String swap1="Today";
 		String swap2="Yesterday";
 		
-		swap2=swap2.concat(swap1).replace(swap2,""); //TodayYesterday
 		
-        System.out.println(" swap1 value is "+swap2);
+		String swap3=swap1.concat(swap2); //TodayYesterday
+		swap2=swap3.replace(swap2,"");
+		swap1=swap3.replace(swap2,"");
+		
+		System.out.println("The swap1 value is "+swap1);
+		System.out.println("The swap2 value is  "+swap2);
+		
 	}
 
 }
