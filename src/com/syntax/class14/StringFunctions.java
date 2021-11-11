@@ -27,7 +27,7 @@ public class StringFunctions {
 		//How would you find out how many sentences are in that String?
 
 		String a="Is it saturday? Is it raining? Do we have a Java Class today?";
-		System.out.println(a.split("[?]").length);
+		System.out.println(a.split("[?.!]").length);
 		
 //		How would you reverse a String character by character?
 		
@@ -38,11 +38,17 @@ public class StringFunctions {
 		
 //		How would you reverse a String word by word?
 		
-		String reverseWord="Tomorrow is a mistery";
-		String[] arr=reverseWord.split(" ");
-		for(int j=arr.length-1;j>=0;j--) {
-			System.out.println(arr[j]);
+		String str4 = "This is sentence i want to reverse";
+		String [] strArr=str.split(" ");
+		
+		for(String word:strArr) {
+			StringBuilder stringBuilder=new StringBuilder(word);
+			System.out.print(stringBuilder.reverse()+" ");
 		}
+		
+		
+		
+		
 //		How would you check if String is palindrome or not?
 		
 		String pali="ANNA";
@@ -57,6 +63,8 @@ public class StringFunctions {
 		}
 		
 		
+		
+		
 //		How would you swap  2 strings without a temporary variable?
 		System.out.println("---------------------");
 		
@@ -65,8 +73,8 @@ public class StringFunctions {
 		
 		
 		String swap3=swap1.concat(swap2); //TodayYesterday
-		swap2=swap3.replace(swap2,"");
-		swap1=swap3.replace(swap2,"");
+		swap2=swap3.replace(swap2,"");//Today
+		swap1=swap3.replace(swap2,"");//Yesterday
 		
 		System.out.println("The swap1 value is "+swap1);
 		System.out.println("The swap2 value is  "+swap2);
