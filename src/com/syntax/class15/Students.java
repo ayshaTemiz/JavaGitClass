@@ -16,16 +16,19 @@ public class Students {
 		Students obj1=new Students();
 		obj1.studentName="Aysha";
 		obj1.studentID=33355577;
+		numberOfStudents++;
 		System.out.println(Students.numberOfStudents);
 		
 		Students obj2=new Students();
 		obj2.studentName="Merry";
 		obj2.studentID=20905567;
+		numberOfStudents++;
 		System.out.println(Students.numberOfStudents);
 		
 		Students obj3=new Students();
 		obj3.studentName="Vanessa";
 		obj3.studentID=11882334;
+		numberOfStudents++;
 		System.out.println(Students.numberOfStudents);
 		
 		
