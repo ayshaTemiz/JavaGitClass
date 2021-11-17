@@ -8,27 +8,28 @@ public class Students {
 //	Print out  total number of students
 	
 	String studentName;
-	int studentID;
-	static int numberOfStudents=30;
+	String studentID;
+	static int numberOfStudents;
 	
 	public static void main(String[] args) {
 		
 		Students obj1=new Students();
 		obj1.studentName="Aysha";
-		obj1.studentID=33355577;
+		obj1.studentID="33355577";
 		numberOfStudents++;
-		System.out.println(Students.numberOfStudents);
+
 		
 		Students obj2=new Students();
 		obj2.studentName="Merry";
-		obj2.studentID=20905567;
+		obj2.studentID="20905567";
 		numberOfStudents++;
-		System.out.println(Students.numberOfStudents);
+		
 		
 		Students obj3=new Students();
 		obj3.studentName="Vanessa";
-		obj3.studentID=11882334;
+		obj3.studentID="1882334";
 		numberOfStudents++;
+		
 		System.out.println(Students.numberOfStudents);
 		
 		
