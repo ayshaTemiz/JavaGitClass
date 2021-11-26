@@ -42,17 +42,18 @@ class SchoolStudent extends Student {
 
 class Testing {
     public static void main(String[] args) {
-//        Student[] obj={new CollegeStudent(),new SchoolStudent(),new SyntaxStudent()};
-//
-//        for(Student  x:obj){
-//            x.study();
-//            x.takeNote();
-//        }
+        Student[] obj = {new CollegeStudent(), new SchoolStudent(), new SyntaxStudent()};
 
-        Student obj1 = new SchoolStudent();
-        SchoolStudent sch = (SchoolStudent) obj1;
-        sch.missingClass();
-        sch.study();
-        sch.takeNote();
+        for (Student x : obj) {
+            x.study();
+            x.takeNote();
+            //eger ortak olmayan methodu da (sadece CollegeStudent icinde olan methodu da) yazdirmak istuyorsam if kullanmaliyim
+            if (x instanceof CollegeStudent) {
+                ((CollegeStudent) x).payTutionFee();
+            }
+
+        }
+
+
     }
 }
